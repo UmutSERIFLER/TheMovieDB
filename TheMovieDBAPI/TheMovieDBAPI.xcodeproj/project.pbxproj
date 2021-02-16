@@ -17,6 +17,32 @@
 		9DA5B87125DC2E0800D52CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5B85F25DC2DDB00D52CEB /* LaunchScreen.storyboard */; };
 		9DA5B87225DC2E0800D52CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5B85D25DC2DDB00D52CEB /* Assets.xcassets */; };
 		9DA5B87325DC2E0800D52CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5B85A25DC2DD900D52CEB /* Main.storyboard */; };
+		9DA5B89B25DC2F2D00D52CEB /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B89A25DC2F2D00D52CEB /* ConnectionManager.swift */; };
+		9DA5B89C25DC2F2D00D52CEB /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B89A25DC2F2D00D52CEB /* ConnectionManager.swift */; };
+		9DA5B8A925DC302300D52CEB /* Keys.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5B8A825DC302300D52CEB /* Keys.json */; };
+		9DA5B8AD25DC302D00D52CEB /* Keys.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5B8AC25DC302D00D52CEB /* Keys.json */; };
+		9DA5B8B425DC311100D52CEB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8B325DC311100D52CEB /* Keys.swift */; };
+		9DA5B8B525DC311100D52CEB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8B325DC311100D52CEB /* Keys.swift */; };
+		9DA5B8BB25DC314000D52CEB /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8BA25DC314000D52CEB /* Credential.swift */; };
+		9DA5B8BC25DC314000D52CEB /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8BA25DC314000D52CEB /* Credential.swift */; };
+		9DA5B8C525DC325E00D52CEB /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8C425DC325E00D52CEB /* ArrayDataProvider.swift */; };
+		9DA5B8C625DC325E00D52CEB /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8C425DC325E00D52CEB /* ArrayDataProvider.swift */; };
+		9DA5B8CC25DC327600D52CEB /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8CB25DC327600D52CEB /* GenericDataProvider.swift */; };
+		9DA5B8CD25DC327600D52CEB /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8CB25DC327600D52CEB /* GenericDataProvider.swift */; };
+		9DA5B8D125DC32E200D52CEB /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8D025DC32E200D52CEB /* CollectionDataSource.swift */; };
+		9DA5B8D225DC32E200D52CEB /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8D025DC32E200D52CEB /* CollectionDataSource.swift */; };
+		9DA5B8D825DC32F700D52CEB /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8D725DC32F700D52CEB /* CollectionArrayDataSource.swift */; };
+		9DA5B8D925DC32F700D52CEB /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8D725DC32F700D52CEB /* CollectionArrayDataSource.swift */; };
+		9DA5B8DD25DC331100D52CEB /* TableArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8DC25DC331100D52CEB /* TableArrayDataSource.swift */; };
+		9DA5B8DE25DC331100D52CEB /* TableArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8DC25DC331100D52CEB /* TableArrayDataSource.swift */; };
+		9DA5B8E225DC332400D52CEB /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8E125DC332400D52CEB /* TableDataSource.swift */; };
+		9DA5B8E325DC332400D52CEB /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8E125DC332400D52CEB /* TableDataSource.swift */; };
+		9DA5B8E725DC336700D52CEB /* CellConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8E625DC336700D52CEB /* CellConfigModel.swift */; };
+		9DA5B8E825DC336700D52CEB /* CellConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8E625DC336700D52CEB /* CellConfigModel.swift */; };
+		9DA5B8EC25DC33A300D52CEB /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8EB25DC33A300D52CEB /* ConfigurableCell.swift */; };
+		9DA5B8ED25DC33A300D52CEB /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8EB25DC33A300D52CEB /* ConfigurableCell.swift */; };
+		9DA5B8F125DC33BA00D52CEB /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8F025DC33BA00D52CEB /* ReusableCell.swift */; };
+		9DA5B8F225DC33BA00D52CEB /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5B8F025DC33BA00D52CEB /* ReusableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +55,20 @@
 		9DA5B87725DC2E0800D52CEB /* TheMovieDBAPIDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieDBAPIDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA5B87F25DC2E4600D52CEB /* TheMovieDBAPIProd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TheMovieDBAPIProd.plist; sourceTree = "<group>"; };
 		9DA5B88025DC2E4600D52CEB /* TheMovieDBAPIDev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TheMovieDBAPIDev.plist; sourceTree = "<group>"; };
+		9DA5B89A25DC2F2D00D52CEB /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		9DA5B8A825DC302300D52CEB /* Keys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Keys.json; sourceTree = "<group>"; };
+		9DA5B8AC25DC302D00D52CEB /* Keys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Keys.json; sourceTree = "<group>"; };
+		9DA5B8B325DC311100D52CEB /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		9DA5B8BA25DC314000D52CEB /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		9DA5B8C425DC325E00D52CEB /* ArrayDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataProvider.swift; sourceTree = "<group>"; };
+		9DA5B8CB25DC327600D52CEB /* GenericDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
+		9DA5B8D025DC32E200D52CEB /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		9DA5B8D725DC32F700D52CEB /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
+		9DA5B8DC25DC331100D52CEB /* TableArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableArrayDataSource.swift; sourceTree = "<group>"; };
+		9DA5B8E125DC332400D52CEB /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		9DA5B8E625DC336700D52CEB /* CellConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigModel.swift; sourceTree = "<group>"; };
+		9DA5B8EB25DC33A300D52CEB /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		9DA5B8F025DC33BA00D52CEB /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +109,10 @@
 		9DA5B85325DC2DD900D52CEB /* TheMovieDBAPI */ = {
 			isa = PBXGroup;
 			children = (
+				9DA5B8BF25DC31F900D52CEB /* GenericDataSources */,
+				9DA5B8B025DC30A600D52CEB /* Models */,
+				9DA5B89925DC2F1600D52CEB /* Utility */,
+				9DA5B89325DC2EF800D52CEB /* Resources */,
 				9DA5B85425DC2DD900D52CEB /* AppDelegate.swift */,
 				9DA5B85825DC2DD900D52CEB /* ViewController.swift */,
 				9DA5B85A25DC2DD900D52CEB /* Main.storyboard */,
@@ -78,6 +122,112 @@
 				9DA5B87F25DC2E4600D52CEB /* TheMovieDBAPIProd.plist */,
 			);
 			path = TheMovieDBAPI;
+			sourceTree = "<group>";
+		};
+		9DA5B89325DC2EF800D52CEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B89525DC2F0100D52CEB /* Prod */,
+				9DA5B89425DC2EFD00D52CEB /* Dev */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DA5B89425DC2EFD00D52CEB /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8A825DC302300D52CEB /* Keys.json */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		9DA5B89525DC2F0100D52CEB /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8AC25DC302D00D52CEB /* Keys.json */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
+		9DA5B89925DC2F1600D52CEB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B89A25DC2F2D00D52CEB /* ConnectionManager.swift */,
+				9DA5B8BA25DC314000D52CEB /* Credential.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9DA5B8B025DC30A600D52CEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8B225DC30B300D52CEB /* ConfigureModels */,
+				9DA5B8B125DC30AD00D52CEB /* ResponseModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9DA5B8B125DC30AD00D52CEB /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		9DA5B8B225DC30B300D52CEB /* ConfigureModels */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8B325DC311100D52CEB /* Keys.swift */,
+			);
+			path = ConfigureModels;
+			sourceTree = "<group>";
+		};
+		9DA5B8BF25DC31F900D52CEB /* GenericDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8C125DC321200D52CEB /* DataSources */,
+				9DA5B8C025DC320D00D52CEB /* CellAbstractions */,
+			);
+			path = GenericDataSources;
+			sourceTree = "<group>";
+		};
+		9DA5B8C025DC320D00D52CEB /* CellAbstractions */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8EB25DC33A300D52CEB /* ConfigurableCell.swift */,
+				9DA5B8F025DC33BA00D52CEB /* ReusableCell.swift */,
+			);
+			path = CellAbstractions;
+			sourceTree = "<group>";
+		};
+		9DA5B8C125DC321200D52CEB /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8C425DC325E00D52CEB /* ArrayDataProvider.swift */,
+				9DA5B8CB25DC327600D52CEB /* GenericDataProvider.swift */,
+				9DA5B8C325DC321F00D52CEB /* CollectionView */,
+				9DA5B8C225DC321900D52CEB /* TableView */,
+				9DA5B8E625DC336700D52CEB /* CellConfigModel.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		9DA5B8C225DC321900D52CEB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8DC25DC331100D52CEB /* TableArrayDataSource.swift */,
+				9DA5B8E125DC332400D52CEB /* TableDataSource.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		9DA5B8C325DC321F00D52CEB /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5B8D025DC32E200D52CEB /* CollectionDataSource.swift */,
+				9DA5B8D725DC32F700D52CEB /* CollectionArrayDataSource.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA5B86125DC2DDB00D52CEB /* LaunchScreen.storyboard in Resources */,
+				9DA5B8AD25DC302D00D52CEB /* Keys.json in Resources */,
 				9DA5B85E25DC2DDB00D52CEB /* Assets.xcassets in Resources */,
 				9DA5B85C25DC2DD900D52CEB /* Main.storyboard in Resources */,
 			);
@@ -167,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA5B87125DC2E0800D52CEB /* LaunchScreen.storyboard in Resources */,
+				9DA5B8A925DC302300D52CEB /* Keys.json in Resources */,
 				9DA5B87225DC2E0800D52CEB /* Assets.xcassets in Resources */,
 				9DA5B87325DC2E0800D52CEB /* Main.storyboard in Resources */,
 			);
@@ -179,7 +331,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA5B8EC25DC33A300D52CEB /* ConfigurableCell.swift in Sources */,
 				9DA5B85925DC2DD900D52CEB /* ViewController.swift in Sources */,
+				9DA5B8B425DC311100D52CEB /* Keys.swift in Sources */,
+				9DA5B8BB25DC314000D52CEB /* Credential.swift in Sources */,
+				9DA5B8E725DC336700D52CEB /* CellConfigModel.swift in Sources */,
+				9DA5B89B25DC2F2D00D52CEB /* ConnectionManager.swift in Sources */,
+				9DA5B8D125DC32E200D52CEB /* CollectionDataSource.swift in Sources */,
+				9DA5B8DD25DC331100D52CEB /* TableArrayDataSource.swift in Sources */,
+				9DA5B8D825DC32F700D52CEB /* CollectionArrayDataSource.swift in Sources */,
+				9DA5B8CC25DC327600D52CEB /* GenericDataProvider.swift in Sources */,
+				9DA5B8C525DC325E00D52CEB /* ArrayDataProvider.swift in Sources */,
+				9DA5B8E225DC332400D52CEB /* TableDataSource.swift in Sources */,
+				9DA5B8F125DC33BA00D52CEB /* ReusableCell.swift in Sources */,
 				9DA5B85525DC2DD900D52CEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,7 +352,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA5B8ED25DC33A300D52CEB /* ConfigurableCell.swift in Sources */,
 				9DA5B86D25DC2E0800D52CEB /* ViewController.swift in Sources */,
+				9DA5B8B525DC311100D52CEB /* Keys.swift in Sources */,
+				9DA5B8BC25DC314000D52CEB /* Credential.swift in Sources */,
+				9DA5B8E825DC336700D52CEB /* CellConfigModel.swift in Sources */,
+				9DA5B89C25DC2F2D00D52CEB /* ConnectionManager.swift in Sources */,
+				9DA5B8D225DC32E200D52CEB /* CollectionDataSource.swift in Sources */,
+				9DA5B8DE25DC331100D52CEB /* TableArrayDataSource.swift in Sources */,
+				9DA5B8D925DC32F700D52CEB /* CollectionArrayDataSource.swift in Sources */,
+				9DA5B8CD25DC327600D52CEB /* GenericDataProvider.swift in Sources */,
+				9DA5B8C625DC325E00D52CEB /* ArrayDataProvider.swift in Sources */,
+				9DA5B8E325DC332400D52CEB /* TableDataSource.swift in Sources */,
+				9DA5B8F225DC33BA00D52CEB /* ReusableCell.swift in Sources */,
 				9DA5B86E25DC2E0800D52CEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
