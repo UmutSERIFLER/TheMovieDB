@@ -9,22 +9,45 @@
 import UIKit
 
 struct CellConfigModel {
+    
     private(set) var cellHeight: Int
     private(set) var cellWidth: Int
     private(set) var sectionHeaderWidth: Int
     private(set) var sectionHeaderHeight: Int
-    private(set) var sectionHeaderText: String
-    private(set) var sectionHeaderView: UIView
-    typealias RowConfig = (width: Int, height: Int)
-    typealias SectionConfig = (width: Int, height: Int, content:(text: String, view: UIView))
+    private(set) var sectionHeaderText: String?
+    private(set) var sectionHeaderView: UIView?
     
-    init(row:RowConfig = (width: 0, height: 0), section:SectionConfig = (width: 0, height: 0, content:(text: "", view: UIView()))) {
+    struct RowConfig {
+        var width: Int
+        var height: Int
+        
+        init(_ width: Int = 0,_ height: Int = 0) {
+            self.width = width
+            self.height = height
+        }
+    }
+    
+    struct SectionConfig {
+        var width: Int
+        var height: Int
+        var headerText: String?
+        var headerView: UIView?
+        
+        init(_ width: Int = 0,_ height: Int = 0,_ headerText: String? = nil,_ headerView: UIView? = nil) {
+            self.width = width
+            self.height = height
+            self.headerText = headerText
+            self.headerView = headerView
+        }
+    }
+    
+    init(row: RowConfig = RowConfig(), section: SectionConfig = SectionConfig()) {
         self.cellWidth = row.width
         self.cellHeight = row.height
         self.sectionHeaderWidth = section.width
         self.sectionHeaderHeight = section.height
-        self.sectionHeaderText = section.content.text
-        self.sectionHeaderView = section.content.view
+        self.sectionHeaderText = section.headerText
+        self.sectionHeaderView = section.headerView
     }
     
 }

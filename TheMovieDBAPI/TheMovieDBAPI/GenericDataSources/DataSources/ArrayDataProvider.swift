@@ -52,7 +52,8 @@ public class ArrayDataProvider<T>: GenericDataProvider {
     }
     
     public func getHeaderView(in section: Int) -> UIView {
-        return self.configurations[section].sectionHeaderView
+        guard let headerView = self.configurations[section].sectionHeaderView else { return UIView() }
+        return headerView
     }
     
     public func getHeaderViewHeight(in section: Int) -> Int {

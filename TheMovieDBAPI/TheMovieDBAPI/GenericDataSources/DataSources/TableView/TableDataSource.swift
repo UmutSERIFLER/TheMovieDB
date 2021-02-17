@@ -65,6 +65,7 @@ open class TableDataSource<Provider: GenericDataProvider, Cell: UITableViewCell>
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       // print("RowHeight:\(CGFloat(provider.getCellHeight(in: indexPath.section))) in Section \(indexPath.section) " )
         return CGFloat(provider.getCellHeight(in: indexPath.section))
     }
     
