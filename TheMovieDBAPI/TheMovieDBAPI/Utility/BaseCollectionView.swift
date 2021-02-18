@@ -15,7 +15,8 @@ class BaseCollectionView: UICollectionView {
         layout.scrollDirection = .vertical
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         super.init(frame: frame, collectionViewLayout: layout)
-        self.backgroundColor = .customBackgroundColor
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = .customBackgroundColor
         cellArray.forEach { register($0, forCellWithReuseIdentifier: $0.identifier)}
     }
     

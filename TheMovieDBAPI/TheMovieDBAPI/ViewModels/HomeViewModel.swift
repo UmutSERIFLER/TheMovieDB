@@ -25,7 +25,6 @@ class HomeViewModel: ViewProtocol {
         self.apiService = apiService
     }
     
-    
     /// This method is called firstly to get configuration from API
     func getExtendedContents() {
         if Config.shared.resource == nil {
@@ -40,7 +39,6 @@ class HomeViewModel: ViewProtocol {
             }
         }
     }
-    
     
     /// This is added for future implementation
     /// - Parameters:
