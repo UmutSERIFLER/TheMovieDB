@@ -13,12 +13,21 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
     var viewModel: SearchViewModel?
     var presenter : UITableView?
     var searchType: MediaType?
+    
     lazy var searchBar : UISearchBar = CustomSearchBar(frame: self.view.frame)
+    
     private(set) var searchDataSource: SearchDataSource?
+    
     lazy var rightBarButtonItem : UIBarButtonItem = {
         var rightBarButton = UIBarButtonItem(title: "Type", style: .done, target: self, action: #selector(sortList))
         rightBarButton.tintColor = .gray
         return rightBarButton
+    }()
+    
+    lazy var refreshControl : UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshPresenter), for: .valueChanged)
+        return refreshControl
     }()
     
     /// Initiliase method for SearchViewController with Dependency Injection
@@ -47,6 +56,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
         guard let strongPresenter = self.presenter else { return }
         view.addSubview(strongPresenter)
         strongPresenter.frame = view.frame
+        strongPresenter.refreshControl = refreshControl
         searchBar.delegate = self
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: searchBar)
     }
@@ -57,6 +67,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
         
         viewModel?.reloadViewClosure = { [weak self] in
             DispatchQueue.main.async {
+                self?.presenter?.refreshControl?.endRefreshing()
                 self?.searchDataSource = self?.setUpDataSource()
             }
         }
@@ -65,6 +76,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
             guard let errorMessage = errorMessage else { return }
             self?.showAlert(withMessage: errorMessage)
         }
+    }
+    
+    @objc func refreshPresenter() {
+        guard let searchText = searchBar.text, let type = searchType else { return }
+        self.viewModel?.searchQuery(query: searchText, type: type, isNewRequest: true)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
