@@ -34,7 +34,6 @@ class CategoryViewController: UIViewController {
     func initUIComponents() {
         guard let collectionView = self.categoryCollectionView else { return }
         view.addSubview(collectionView)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.frame = view.frame
     }
     
@@ -53,21 +52,6 @@ class CategoryViewController: UIViewController {
         }
         self.categoryViewModel?.getPopularContents(type: self.title)
     }
-//
-//    @objc func sortList() {
-//        DispatchQueue.main.async { [weak self] in
-//            let filterVC = ChooserPopoverTableViewController { (selectedOption) in
-//                self?.productDataSource = self?.setUpDataSource(filter: selectedOption)
-//            }
-//            filterVC.preferredContentSize = CGSize(width: 150, height: 50)
-//            let presentationController = ChooserPopoverViewModel.configurePresentation(forController: filterVC)
-//            let referenceView = self?.rightBarButtonItem.value(forKey: "view") as? UIView
-//            presentationController.sourceView = referenceView
-//            presentationController.sourceRect = referenceView?.bounds ?? CGRect(origin: .zero, size: CGSize(width: 50, height: 100))
-//            presentationController.permittedArrowDirections = [.up]
-//            self?.present(filterVC, animated: true)
-//        }
-//    }
 
 }
 

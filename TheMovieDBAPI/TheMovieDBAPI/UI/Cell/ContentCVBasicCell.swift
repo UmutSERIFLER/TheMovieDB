@@ -15,9 +15,7 @@ class ContentCVBasicCell: UICollectionViewCell {
         didSet {
             self.contentName.text = content?.title
             contentView.backgroundColor = (content?.mediaType == .person) ? .blue : (content?.mediaType == .movie) ? .lightGray : .darkGray
-            guard let contentURL = self.content?.getContentImageURL(resolution: .medium) else {
-                return
-            }
+            guard let contentURL = self.content?.getContentImageURL(resolution: .medium) else { return }
             contentImage.kf.indicatorType = .activity
             contentImage.kf.setImage(with: contentURL)
         }
@@ -27,6 +25,8 @@ class ContentCVBasicCell: UICollectionViewCell {
         let iv = UIImageView()
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleToFill
+        iv.layer.masksToBounds = true
+        iv.layer.cornerRadius = 34
         iv.clipsToBounds = true
         return iv
     }()
@@ -45,11 +45,6 @@ class ContentCVBasicCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: .zero)
         contentView.backgroundColor = .clear
-        if #available(iOS 13.0, *) {
-            contentView.layer.cornerCurve = .continuous
-        } else {
-            // Fallback on earlier versions
-        }
         contentView.layer.masksToBounds = true
         contentView.layer.cornerRadius = 34
         contentView.addSubview(contentImage)
