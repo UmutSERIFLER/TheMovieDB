@@ -18,7 +18,7 @@ class CategoryCVCell: UICollectionViewCell, ConfigurableCell {
     // Update Model
     var content: ContentModel? {
         didSet {
-            contentName.text = content?.title
+            contentName.text = content?.originalName ?? content?.originalTitle
             contentDescription.text = content?.overview
             guard let contentURL = self.content?.getContentImageURL(resolution: .medium) else {
                 return

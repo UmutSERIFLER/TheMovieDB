@@ -12,7 +12,7 @@ class ContentCVExtendedCell: UICollectionViewCell {
     
     var content: ContentModel? {
         didSet {
-            self.contentName.text = content?.title
+            self.contentName.text = content?.originalName ?? content?.originalTitle
             contentView.backgroundColor = (content?.mediaType == .person) ? .blue : (content?.mediaType == .movie) ? .lightGray : .darkGray
             guard let contentURL = self.content?.getContentImageURL(resolution: .medium) else {
                 return

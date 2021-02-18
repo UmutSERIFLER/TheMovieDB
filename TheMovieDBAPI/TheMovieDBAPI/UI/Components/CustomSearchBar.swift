@@ -39,7 +39,7 @@ class CustomSearchBar: UISearchBar {
         imageView.image = imageView.image?.withRenderingMode(.alwaysTemplate)
     }
     
-    func setSearchBarColor(forImage: UIColor = .white, forText: UIColor = .white) {
+    func setSearchBarColor(forImage: UIColor = .gray, forText: UIColor = .black) {
         self.setSearchImage(color: forImage)
         self.setText(color: forText)
     }

@@ -59,10 +59,10 @@ struct ContentModel: Decodable {
         case voteAverage = "vote_average"
         case id, overview, name
         case originalName = "original_name"
+        case originalTitle = "original_title"
         case popularity
         case mediaType = "media_type"
         case title
-        case originalTitle = "original_title"
         case video
         case adult
         case releaseDate = "release_date"
