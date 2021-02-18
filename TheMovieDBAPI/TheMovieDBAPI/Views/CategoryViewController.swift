@@ -13,13 +13,10 @@ class CategoryViewController: UIViewController {
     var categoryViewModel: CategoryViewModel?
     var categoryCollectionView: UICollectionView?
     private(set) var productDataSource: ProductDataSource?
-//    lazy var rightBarButtonItem : UIBarButtonItem = {
-//        var rightBarButton = UIBarButtonItem(title: "Filter", style: .done, target: self, action: #selector(sortList))
-//        rightBarButton.tintColor = .orange
-//        return rightBarButton
-//    }()
     
-    init(viewModel: CategoryViewModel = CategoryViewModel(), collectionView: UICollectionView = BaseCollectionView(cellArray: [CategoryCVCell.self]), forCategory: String) {
+    init(viewModel: CategoryViewModel = CategoryViewModel(),
+         collectionView: UICollectionView = BaseCollectionView(cellArray: [CategoryCVCell.self]),
+         forCategory: String) {
         super.init(nibName: nil, bundle: nil)
         self.categoryViewModel = viewModel
         self.categoryCollectionView = collectionView
@@ -30,17 +27,15 @@ class CategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        self.initUIComponents()
+        self.initViewModel()
+    }
+    
+    func initUIComponents() {
         guard let collectionView = self.categoryCollectionView else { return }
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.frame = view.frame
-        self.initViewModel()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
     }
     
     // Initiliase View Model Actions

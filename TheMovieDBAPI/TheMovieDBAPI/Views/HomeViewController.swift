@@ -16,7 +16,8 @@ class HomeViewController: UIViewController {
     /// - Parameters:
     ///   - viewModel: Required ViewModel for View
     ///   - tableView: Create&Assign TableView
-    init(viewModel: HomeViewModel = HomeViewModel(), tableView: UITableView = BaseTableView(cellArray: [ContentGroupTVCell.self])) {
+    init(viewModel: HomeViewModel = HomeViewModel(),
+         tableView: UITableView = BaseTableView(cellArray: [ContentGroupTVCell.self])) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
         self.presenter = tableView
@@ -27,12 +28,16 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initUIComponents()
+        self.initViewModel()
+    }
+    
+    func initUIComponents() {
         guard let strongPresenter = self.presenter else { return }
         view.addSubview(strongPresenter)
         strongPresenter.frame = view.frame
         strongPresenter.delegate = self
         strongPresenter.dataSource = self
-        self.initViewModel()
     }
     
     // MARK: Initiliase View Model Actions
