@@ -1,13 +1,10 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
-
 def default_moviedb_pods 
  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
   pod 'Kingfisher'
-
 end
 
 target 'TheMovieDBAPIDev' do
@@ -15,7 +12,6 @@ target 'TheMovieDBAPIDev' do
   use_frameworks!
   default_moviedb_pods
   # Pods for TheMovieDBAPIDev
-
 end
 
 target 'TheMovieDBAPIProd' do
@@ -23,5 +19,4 @@ target 'TheMovieDBAPIProd' do
   use_frameworks!
   default_moviedb_pods
   # Pods for TheMovieDBAPIProd
-
 end

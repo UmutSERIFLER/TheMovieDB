@@ -21,9 +21,9 @@ class CategoryViewModel: ViewProtocol {
         }
     }
     
-    init(_ catalog: TrendingResponseModel? = nil,_ apiService: MovieDBAPIProviderProtocol = MovieDBAPIProvider()) {
+    init(_ category: TrendingResponseModel? = nil,_ apiService: MovieDBAPIProviderProtocol = MovieDBAPIProvider()) {
         self.apiService = apiService
-        self.categoryResponse = catalog
+        self.categoryResponse = category
     }
     
     func getPopularContents(type: String?, pageNumber: Int = 1, timeSlot: TimeWindow = .day) {
