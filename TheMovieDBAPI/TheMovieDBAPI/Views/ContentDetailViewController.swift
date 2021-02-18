@@ -22,8 +22,10 @@ class ContentDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let strongContent = self.content else { return }
+        
         let contentDV = ContentDetailView(frame: self.view.frame)
         contentDV.setContentInformations(content: strongContent)
+        
         self.view.addSubview(contentDV)
         self.title = strongContent.title
     }
