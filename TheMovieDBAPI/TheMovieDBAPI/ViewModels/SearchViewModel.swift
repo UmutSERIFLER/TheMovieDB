@@ -61,9 +61,7 @@ class SearchViewModel: ViewProtocol {
     
     func fetchData(indexPath: IndexPath) {
         
-        guard let contentCount = self.searchedContents?.results.count else { return }
-        
-        guard let pageNumber = self.searchedContents?.page else { return }
+        guard let contentCount = self.searchedContents?.results.count, let pageNumber = self.searchedContents?.page else { return }
         
         if (contentCount < 25) || ((contentCount - indexPath.row) == 10) {
             searchQuery(query: search.query, type: search.type, pageNumber: pageNumber + 1)

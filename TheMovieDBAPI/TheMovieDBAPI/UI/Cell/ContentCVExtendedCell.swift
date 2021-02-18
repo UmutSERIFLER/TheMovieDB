@@ -52,8 +52,8 @@ class ContentCVExtendedCell: UICollectionViewCell {
             contentImage.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             
             contentName.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.3),
-            contentName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
-            contentName.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 5),
+            contentName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            contentName.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             contentName.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
     }

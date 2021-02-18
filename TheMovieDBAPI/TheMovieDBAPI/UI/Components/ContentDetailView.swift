@@ -35,7 +35,7 @@ class ContentDetailView: UIView {
     }
     
     func setContentInformations(content: ContentModel){
-        contentName.text = content.title
+        contentName.text = content.originalName ?? content.originalTitle
         contentDescription.text = content.overview
         contentPopularity.text = String(content.popularity ?? 0)
         guard let contentURL = content.getContentImageURL(resolution: .medium) else {

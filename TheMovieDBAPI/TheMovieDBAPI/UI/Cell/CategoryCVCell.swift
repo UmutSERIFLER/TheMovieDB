@@ -38,7 +38,7 @@ class CategoryCVCell: UICollectionViewCell, ConfigurableCell {
     
     fileprivate lazy var contentName : UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 12)
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
