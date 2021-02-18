@@ -29,7 +29,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         guard let strongPresenter = self.presenter else { return }
         view.addSubview(strongPresenter)
-        strongPresenter.translatesAutoresizingMaskIntoConstraints = false
         strongPresenter.frame = view.frame
         strongPresenter.delegate = self
         strongPresenter.dataSource = self

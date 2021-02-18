@@ -13,6 +13,7 @@ public enum MovieDBAPI {
     case getTrending(type: MediaType, time: TimeWindow, page: Int)
     case getPopularTVs(page: Int)
     case getPopularMovies(page: Int)
+    case search(query: String, pageNumber: Int, for: MediaType)
 }
 
 fileprivate enum MovieDBServiceTitles: String {
@@ -21,6 +22,8 @@ fileprivate enum MovieDBServiceTitles: String {
     case popular = "popular?"
     case trending = "trending/"
     case configuration = "configuration?"
+    case search = "search/"
+    
 }
 
 extension MovieDBAPI: EndPointType {
@@ -40,6 +43,8 @@ extension MovieDBAPI: EndPointType {
             return MovieDBServiceTitles.tv.rawValue + MovieDBServiceTitles.popular.rawValue + "page=\(pageNumber)&"
         case .getTrending(let genre, let time, let pageNumber):
             return MovieDBServiceTitles.trending.rawValue + "\(genre.rawValue)/\(time.rawValue)?page=\(pageNumber)&"
+        case .search(let query, let pageNumber,let mediaType):
+            return MovieDBServiceTitles.search.rawValue + "\(mediaType)?query=\(query)&page=\(pageNumber)&"
         case .configuration:
             return MovieDBServiceTitles.configuration.rawValue
         }
@@ -51,14 +56,14 @@ extension MovieDBAPI: EndPointType {
     
     var httpMethod: HTTPMethod {
         switch self {
-        case .getTrending, .configuration, .getPopularMovies, .getPopularTVs:
+        case .getTrending, .configuration, .getPopularMovies, .getPopularTVs, .search:
             return .get
         }
     }
     
     var task: HTTPTask {
         switch self {
-        case .getTrending, .configuration, .getPopularMovies, .getPopularTVs:
+        case .getTrending, .configuration, .getPopularMovies, .getPopularTVs, .search:
             return .request
         }
     }

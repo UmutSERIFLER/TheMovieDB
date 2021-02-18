@@ -37,13 +37,13 @@ protocol MovieDBAPIProviderProtocol {
     
     func getPopularMovies(pageNumber: Int, completionHandler: @escaping (Result<TrendingResponseModel, MovieDBErrorResponseModel>) -> ())
     func getPopularTVs(pageNumber: Int, completionHandler: @escaping (Result<TrendingResponseModel, MovieDBErrorResponseModel>) -> ())
-  //  func getCategory(completionHandler: @escaping (Result<CategoryResponseModels, MovieDBErrorResponseModel>) -> ())
+    func search(query: String, type: MediaType, page: Int, completionHandler: @escaping (Result<SearchResponseModel, MovieDBErrorResponseModel>) -> ())
 }
 
 
 /// MovieDBAPI Provider
 struct MovieDBAPIProvider: MovieDBAPIProviderProtocol {
-            
+ 
     let router = Router<MovieDBAPI>()
     
     /// Generic Parser Method for Decodable formats
@@ -127,5 +127,12 @@ struct MovieDBAPIProvider: MovieDBAPIProviderProtocol {
         }
     }
     
+    func search(query: String, type: MediaType, page: Int, completionHandler: @escaping (Result<SearchResponseModel, MovieDBErrorResponseModel>) -> ()) {
+        router.request(.search(query: query, pageNumber: page, for: type)) { (data, response, error) in
+            self.genericParser(data, response, error) { (result) in
+                completionHandler(result)
+            }
+        }
+    }
     
 }

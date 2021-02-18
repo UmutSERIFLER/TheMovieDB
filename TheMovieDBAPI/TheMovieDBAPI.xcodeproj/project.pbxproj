@@ -117,6 +117,24 @@
 		9DA5BA4625DDAD1900D52CEB /* ContentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5BA4425DDAD1900D52CEB /* ContentDetailView.xib */; };
 		9DA5BA5325DDBDAF00D52CEB /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BA5225DDBDAF00D52CEB /* CellProtocol.swift */; };
 		9DA5BA5425DDBDAF00D52CEB /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BA5225DDBDAF00D52CEB /* CellProtocol.swift */; };
+		9DA5BAAC25DE501300D52CEB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAAB25DE501300D52CEB /* SearchViewController.swift */; };
+		9DA5BAAD25DE501300D52CEB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAAB25DE501300D52CEB /* SearchViewController.swift */; };
+		9DA5BAB125DE503700D52CEB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAB025DE503700D52CEB /* SearchViewModel.swift */; };
+		9DA5BAB225DE503700D52CEB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAB025DE503700D52CEB /* SearchViewModel.swift */; };
+		9DA5BAB625DE527200D52CEB /* SearchTVBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAB525DE527200D52CEB /* SearchTVBasicCell.swift */; };
+		9DA5BAB725DE527200D52CEB /* SearchTVBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAB525DE527200D52CEB /* SearchTVBasicCell.swift */; };
+		9DA5BABB25DE5EAA00D52CEB /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BABA25DE5EAA00D52CEB /* CustomSearchBar.swift */; };
+		9DA5BABC25DE5EAA00D52CEB /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BABA25DE5EAA00D52CEB /* CustomSearchBar.swift */; };
+		9DA5BAC225DE64DA00D52CEB /* SearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAC125DE64DA00D52CEB /* SearchResponseModel.swift */; };
+		9DA5BAC325DE64DA00D52CEB /* SearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAC125DE64DA00D52CEB /* SearchResponseModel.swift */; };
+		9DA5BAC925DE77CB00D52CEB /* ChooserPopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAC825DE77CB00D52CEB /* ChooserPopoverTableViewController.swift */; };
+		9DA5BACA25DE77CB00D52CEB /* ChooserPopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAC825DE77CB00D52CEB /* ChooserPopoverTableViewController.swift */; };
+		9DA5BADD25DE789B00D52CEB /* FilterOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BADB25DE789B00D52CEB /* FilterOptionTableViewCell.swift */; };
+		9DA5BADE25DE789B00D52CEB /* FilterOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BADB25DE789B00D52CEB /* FilterOptionTableViewCell.swift */; };
+		9DA5BADF25DE789B00D52CEB /* FilterOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5BADC25DE789B00D52CEB /* FilterOptionTableViewCell.xib */; };
+		9DA5BAE025DE789B00D52CEB /* FilterOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5BADC25DE789B00D52CEB /* FilterOptionTableViewCell.xib */; };
+		9DA5BAE425DE7A2A00D52CEB /* ChooserPopoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAE325DE7A2A00D52CEB /* ChooserPopoverViewModel.swift */; };
+		9DA5BAE525DE7A2A00D52CEB /* ChooserPopoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAE325DE7A2A00D52CEB /* ChooserPopoverViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,6 +198,15 @@
 		9DA5BA3C25DDACE400D52CEB /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		9DA5BA4425DDAD1900D52CEB /* ContentDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentDetailView.xib; sourceTree = "<group>"; };
 		9DA5BA5225DDBDAF00D52CEB /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		9DA5BAAB25DE501300D52CEB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9DA5BAB025DE503700D52CEB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		9DA5BAB525DE527200D52CEB /* SearchTVBasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVBasicCell.swift; sourceTree = "<group>"; };
+		9DA5BABA25DE5EAA00D52CEB /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		9DA5BAC125DE64DA00D52CEB /* SearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponseModel.swift; sourceTree = "<group>"; };
+		9DA5BAC825DE77CB00D52CEB /* ChooserPopoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserPopoverTableViewController.swift; sourceTree = "<group>"; };
+		9DA5BADB25DE789B00D52CEB /* FilterOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionTableViewCell.swift; sourceTree = "<group>"; };
+		9DA5BADC25DE789B00D52CEB /* FilterOptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterOptionTableViewCell.xib; sourceTree = "<group>"; };
+		9DA5BAE325DE7A2A00D52CEB /* ChooserPopoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserPopoverViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +329,7 @@
 				9DA5B92825DC41E100D52CEB /* MediaTypeModel.swift */,
 				9DA5B92F25DC428800D52CEB /* TimeWindowModel.swift */,
 				9DA5B93425DC4E5400D52CEB /* ConfigResponseModel.swift */,
+				9DA5BAC125DE64DA00D52CEB /* SearchResponseModel.swift */,
 			);
 			path = ResponseModels;
 			sourceTree = "<group>";
@@ -348,8 +376,8 @@
 		9DA5B8C225DC321900D52CEB /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				9DA5B8DC25DC331100D52CEB /* TableArrayDataSource.swift */,
 				9DA5B8E125DC332400D52CEB /* TableDataSource.swift */,
+				9DA5B8DC25DC331100D52CEB /* TableArrayDataSource.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -410,6 +438,7 @@
 				9DA5B97E25DC5E9A00D52CEB /* HomeViewController.swift */,
 				9DA5BA2625DD9BDF00D52CEB /* CategoryViewController.swift */,
 				9DA5BA3525DDABCD00D52CEB /* ContentDetailViewController.swift */,
+				9DA5BAAB25DE501300D52CEB /* SearchViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -419,6 +448,7 @@
 			children = (
 				9DA5B95D25DC5DB500D52CEB /* TabbarItemController.swift */,
 				9DA5B96425DC5DC600D52CEB /* TabbarViewController.swift */,
+				9DA5BAC825DE77CB00D52CEB /* ChooserPopoverTableViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -451,6 +481,9 @@
 				9DA5B9CB25DD566600D52CEB /* ContentCVBasicCell.swift */,
 				9DA5B9D725DD58B400D52CEB /* ContentCVExtendedCell.swift */,
 				9DA5BA3025DD9C9500D52CEB /* CategoryCVCell.swift */,
+				9DA5BAB525DE527200D52CEB /* SearchTVBasicCell.swift */,
+				9DA5BADB25DE789B00D52CEB /* FilterOptionTableViewCell.swift */,
+				9DA5BADC25DE789B00D52CEB /* FilterOptionTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -460,6 +493,8 @@
 			children = (
 				9DA5B98125DC5E9A00D52CEB /* HomeViewModel.swift */,
 				9DA5BA2B25DD9C1600D52CEB /* CategoryViewModel.swift */,
+				9DA5BAB025DE503700D52CEB /* SearchViewModel.swift */,
+				9DA5BAE325DE7A2A00D52CEB /* ChooserPopoverViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -486,6 +521,7 @@
 			children = (
 				9DA5BA3C25DDACE400D52CEB /* ContentDetailView.swift */,
 				9DA5BA4425DDAD1900D52CEB /* ContentDetailView.xib */,
+				9DA5BABA25DE5EAA00D52CEB /* CustomSearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -566,6 +602,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA5BADF25DE789B00D52CEB /* FilterOptionTableViewCell.xib in Resources */,
 				9DA5B86125DC2DDB00D52CEB /* LaunchScreen.storyboard in Resources */,
 				9DA5B8AD25DC302D00D52CEB /* Keys.json in Resources */,
 				9DA5B85E25DC2DDB00D52CEB /* Assets.xcassets in Resources */,
@@ -578,6 +615,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA5BAE025DE789B00D52CEB /* FilterOptionTableViewCell.xib in Resources */,
 				9DA5B87125DC2E0800D52CEB /* LaunchScreen.storyboard in Resources */,
 				9DA5B8A925DC302300D52CEB /* Keys.json in Resources */,
 				9DA5B87225DC2E0800D52CEB /* Assets.xcassets in Resources */,
@@ -596,6 +634,7 @@
 				9DA5B90E25DC399200D52CEB /* ParameterEncoding.swift in Sources */,
 				9DA5B90C25DC399200D52CEB /* JSONParameterEncoder.swift in Sources */,
 				9DA5B98225DC5E9A00D52CEB /* HomeViewController.swift in Sources */,
+				9DA5BAAC25DE501300D52CEB /* SearchViewController.swift in Sources */,
 				9DA5BA2C25DD9C1600D52CEB /* CategoryViewModel.swift in Sources */,
 				9DA5BA5325DDBDAF00D52CEB /* CellProtocol.swift in Sources */,
 				9DA5B9B325DD19A300D52CEB /* ContentGroupTVCell.swift in Sources */,
@@ -610,7 +649,9 @@
 				9DA5B98625DC5E9A00D52CEB /* ViewProtocol.swift in Sources */,
 				9DA5B8EC25DC33A300D52CEB /* ConfigurableCell.swift in Sources */,
 				9DA5B8B425DC311100D52CEB /* Keys.swift in Sources */,
+				9DA5BAB125DE503700D52CEB /* SearchViewModel.swift in Sources */,
 				9DA5B96525DC5DC600D52CEB /* TabbarViewController.swift in Sources */,
+				9DA5BAE425DE7A2A00D52CEB /* ChooserPopoverViewModel.swift in Sources */,
 				9DA5B8BB25DC314000D52CEB /* Credential.swift in Sources */,
 				9DA5B95E25DC5DB500D52CEB /* TabbarItemController.swift in Sources */,
 				9DA5B99025DC5F0D00D52CEB /* NSObject+Extension.swift in Sources */,
@@ -620,14 +661,18 @@
 				9DA5B91F25DC3C2A00D52CEB /* MovieDBErrorResponseModel.swift in Sources */,
 				9DA5BA3D25DDACE400D52CEB /* ContentDetailView.swift in Sources */,
 				9DA5B98825DC5E9A00D52CEB /* HomeViewModel.swift in Sources */,
+				9DA5BAB625DE527200D52CEB /* SearchTVBasicCell.swift in Sources */,
 				9DA5B99925DC6DFB00D52CEB /* UIViewController+Extension.swift in Sources */,
 				9DA5B92925DC41E100D52CEB /* MediaTypeModel.swift in Sources */,
 				9DA5B8D125DC32E200D52CEB /* CollectionDataSource.swift in Sources */,
+				9DA5BADD25DE789B00D52CEB /* FilterOptionTableViewCell.swift in Sources */,
 				9DA5B91625DC399900D52CEB /* MovieAPIProvider.swift in Sources */,
 				9DA5B8FD25DC398900D52CEB /* Router.swift in Sources */,
 				9DA5B8DD25DC331100D52CEB /* TableArrayDataSource.swift in Sources */,
 				9DA5B8D825DC32F700D52CEB /* CollectionArrayDataSource.swift in Sources */,
+				9DA5BAC925DE77CB00D52CEB /* ChooserPopoverTableViewController.swift in Sources */,
 				9DA5B8CC25DC327600D52CEB /* GenericDataProvider.swift in Sources */,
+				9DA5BAC225DE64DA00D52CEB /* SearchResponseModel.swift in Sources */,
 				9DA5B91425DC399900D52CEB /* MovieDBAPI.swift in Sources */,
 				9DA5B90325DC398A00D52CEB /* HTTPTask.swift in Sources */,
 				9DA5B90125DC398A00D52CEB /* HTTPMethod.swift in Sources */,
@@ -640,6 +685,7 @@
 				9DA5BA3625DDABCD00D52CEB /* ContentDetailViewController.swift in Sources */,
 				9DA5B92425DC3DC100D52CEB /* TrendingResponseModel.swift in Sources */,
 				9DA5B8E225DC332400D52CEB /* TableDataSource.swift in Sources */,
+				9DA5BABB25DE5EAA00D52CEB /* CustomSearchBar.swift in Sources */,
 				9DA5B93025DC428800D52CEB /* TimeWindowModel.swift in Sources */,
 				9DA5B8F125DC33BA00D52CEB /* ReusableCell.swift in Sources */,
 				9DA5B85525DC2DD900D52CEB /* AppDelegate.swift in Sources */,
@@ -653,6 +699,7 @@
 				9DA5B90F25DC399200D52CEB /* ParameterEncoding.swift in Sources */,
 				9DA5B90D25DC399200D52CEB /* JSONParameterEncoder.swift in Sources */,
 				9DA5B98325DC5E9A00D52CEB /* HomeViewController.swift in Sources */,
+				9DA5BAAD25DE501300D52CEB /* SearchViewController.swift in Sources */,
 				9DA5BA2D25DD9C1600D52CEB /* CategoryViewModel.swift in Sources */,
 				9DA5BA5425DDBDAF00D52CEB /* CellProtocol.swift in Sources */,
 				9DA5B9B425DD19A300D52CEB /* ContentGroupTVCell.swift in Sources */,
@@ -667,7 +714,9 @@
 				9DA5B98725DC5E9A00D52CEB /* ViewProtocol.swift in Sources */,
 				9DA5B8ED25DC33A300D52CEB /* ConfigurableCell.swift in Sources */,
 				9DA5B8B525DC311100D52CEB /* Keys.swift in Sources */,
+				9DA5BAB225DE503700D52CEB /* SearchViewModel.swift in Sources */,
 				9DA5B96625DC5DC600D52CEB /* TabbarViewController.swift in Sources */,
+				9DA5BAE525DE7A2A00D52CEB /* ChooserPopoverViewModel.swift in Sources */,
 				9DA5B8BC25DC314000D52CEB /* Credential.swift in Sources */,
 				9DA5B95F25DC5DB500D52CEB /* TabbarItemController.swift in Sources */,
 				9DA5B99125DC5F0D00D52CEB /* NSObject+Extension.swift in Sources */,
@@ -677,14 +726,18 @@
 				9DA5B92025DC3C2A00D52CEB /* MovieDBErrorResponseModel.swift in Sources */,
 				9DA5BA3E25DDACE400D52CEB /* ContentDetailView.swift in Sources */,
 				9DA5B98925DC5E9A00D52CEB /* HomeViewModel.swift in Sources */,
+				9DA5BAB725DE527200D52CEB /* SearchTVBasicCell.swift in Sources */,
 				9DA5B99A25DC6DFB00D52CEB /* UIViewController+Extension.swift in Sources */,
 				9DA5B92A25DC41E100D52CEB /* MediaTypeModel.swift in Sources */,
 				9DA5B8D225DC32E200D52CEB /* CollectionDataSource.swift in Sources */,
+				9DA5BADE25DE789B00D52CEB /* FilterOptionTableViewCell.swift in Sources */,
 				9DA5B91725DC399900D52CEB /* MovieAPIProvider.swift in Sources */,
 				9DA5B8FE25DC398A00D52CEB /* Router.swift in Sources */,
 				9DA5B8DE25DC331100D52CEB /* TableArrayDataSource.swift in Sources */,
 				9DA5B8D925DC32F700D52CEB /* CollectionArrayDataSource.swift in Sources */,
+				9DA5BACA25DE77CB00D52CEB /* ChooserPopoverTableViewController.swift in Sources */,
 				9DA5B8CD25DC327600D52CEB /* GenericDataProvider.swift in Sources */,
+				9DA5BAC325DE64DA00D52CEB /* SearchResponseModel.swift in Sources */,
 				9DA5B91525DC399900D52CEB /* MovieDBAPI.swift in Sources */,
 				9DA5B90425DC398A00D52CEB /* HTTPTask.swift in Sources */,
 				9DA5B90225DC398A00D52CEB /* HTTPMethod.swift in Sources */,
@@ -697,6 +750,7 @@
 				9DA5BA3725DDABCD00D52CEB /* ContentDetailViewController.swift in Sources */,
 				9DA5B92525DC3DC100D52CEB /* TrendingResponseModel.swift in Sources */,
 				9DA5B8E325DC332400D52CEB /* TableDataSource.swift in Sources */,
+				9DA5BABC25DE5EAA00D52CEB /* CustomSearchBar.swift in Sources */,
 				9DA5B93125DC428800D52CEB /* TimeWindowModel.swift in Sources */,
 				9DA5B8F225DC33BA00D52CEB /* ReusableCell.swift in Sources */,
 				9DA5B86E25DC2E0800D52CEB /* AppDelegate.swift in Sources */,

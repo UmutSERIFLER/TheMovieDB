@@ -16,9 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Credential.readValues()
         window = UIWindow(frame: UIScreen.main.bounds)
-        let tabbarVC = TabbarViewController.init(nibName: TabbarViewController.identifier, bundle: nil)
         window!.makeKeyAndVisible()
-        window!.rootViewController = tabbarVC
+        window!.rootViewController = TabbarViewController()
         return true
     }
 

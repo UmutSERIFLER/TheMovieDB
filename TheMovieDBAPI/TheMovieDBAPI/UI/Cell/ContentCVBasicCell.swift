@@ -45,6 +45,13 @@ class ContentCVBasicCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: .zero)
         contentView.backgroundColor = .clear
+        if #available(iOS 13.0, *) {
+            contentView.layer.cornerCurve = .continuous
+        } else {
+            // Fallback on earlier versions
+        }
+        contentView.layer.masksToBounds = true
+        contentView.layer.cornerRadius = 34
         contentView.addSubview(contentImage)
         contentView.addSubview(contentName)
         NSLayoutConstraint.activate([

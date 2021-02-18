@@ -10,22 +10,26 @@ import UIKit
 
 enum TabBarItems: String {
     case List
-//    case Search
+    case Search
 }
 
 class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
     
-    var viewControllersArray: [UIViewController]!
+    var viewControllersArray: [UIViewController] = []
     var itemController: TabbarItemController!
+    
+    init(vcArray: [TabBarItems] = [.List,.Search]) {
+        super.init(nibName: nil, bundle: nil)
+        vcArray.forEach({viewControllersArray.append(setViewControllerForTabBarItem(itemType: $0))})
+        viewControllers = viewControllersArray
+    }
+    
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-        self.tabBar.tintColor = .orange
-        viewControllersArray = []
-        viewControllersArray?.append(setViewControllerForTabBarItem(itemType: .List))
-//        viewControllersArray?.append(setViewControllerForTabBarItem(itemType: .Search))
-        viewControllers = viewControllersArray
+        self.tabBar.tintColor = .blue
     }
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
