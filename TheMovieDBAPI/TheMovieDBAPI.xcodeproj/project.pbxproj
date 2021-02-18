@@ -135,8 +135,6 @@
 		9DA5BAE025DE789B00D52CEB /* FilterOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5BADC25DE789B00D52CEB /* FilterOptionTableViewCell.xib */; };
 		9DA5BAE425DE7A2A00D52CEB /* ChooserPopoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAE325DE7A2A00D52CEB /* ChooserPopoverViewModel.swift */; };
 		9DA5BAE525DE7A2A00D52CEB /* ChooserPopoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BAE325DE7A2A00D52CEB /* ChooserPopoverViewModel.swift */; };
-		9DA5BB1325DE944500D52CEB /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BB1225DE944500D52CEB /* ResourceLoader.swift */; };
-		9DA5BB1425DE944500D52CEB /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BB1225DE944500D52CEB /* ResourceLoader.swift */; };
 		9DA5BB2125DE956500D52CEB /* trendAll.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5BB1E25DE956500D52CEB /* trendAll.json */; };
 		9DA5BB2225DE956500D52CEB /* trendAll.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5BB1E25DE956500D52CEB /* trendAll.json */; };
 		9DA5BB2325DE956500D52CEB /* trendMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5BB1F25DE956500D52CEB /* trendMovie.json */; };
@@ -149,6 +147,7 @@
 		9DA5BB9125DE9AAD00D52CEB /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BB1925DE94B000D52CEB /* MockAPIService.swift */; };
 		9DA5BBA525DE9B8F00D52CEB /* CategoryCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BBA425DE9B8F00D52CEB /* CategoryCellTest.swift */; };
 		9DA5BBBD25DE9C5F00D52CEB /* CategoryViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BBBC25DE9C5F00D52CEB /* CategoryViewModelTest.swift */; };
+		9DA5BC0725DEA5F700D52CEB /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5BB1225DE944500D52CEB /* ResourceLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -891,7 +890,6 @@
 				9DA5B9AD25DC856000D52CEB /* UIView+Extension.swift in Sources */,
 				9DA5B8C525DC325E00D52CEB /* ArrayDataProvider.swift in Sources */,
 				9DA5B9E525DD67E800D52CEB /* BaseCollectionView.swift in Sources */,
-				9DA5BB1325DE944500D52CEB /* ResourceLoader.swift in Sources */,
 				9DA5B9CD25DD566600D52CEB /* ContentCVBasicCell.swift in Sources */,
 				9DA5BA0825DD956E00D52CEB /* UIColor+Extension.swift in Sources */,
 				9DA5BA3625DDABCD00D52CEB /* ContentDetailViewController.swift in Sources */,
@@ -957,7 +955,6 @@
 				9DA5B9AE25DC856000D52CEB /* UIView+Extension.swift in Sources */,
 				9DA5B8C625DC325E00D52CEB /* ArrayDataProvider.swift in Sources */,
 				9DA5B9E625DD67E800D52CEB /* BaseCollectionView.swift in Sources */,
-				9DA5BB1425DE944500D52CEB /* ResourceLoader.swift in Sources */,
 				9DA5B9CE25DD566600D52CEB /* ContentCVBasicCell.swift in Sources */,
 				9DA5BA0925DD956E00D52CEB /* UIColor+Extension.swift in Sources */,
 				9DA5BA3725DDABCD00D52CEB /* ContentDetailViewController.swift in Sources */,
@@ -976,6 +973,7 @@
 			files = (
 				9DA5BB9125DE9AAD00D52CEB /* MockAPIService.swift in Sources */,
 				9DA5BB8825DE9A9900D52CEB /* CategoryViewTest.swift in Sources */,
+				9DA5BC0725DEA5F700D52CEB /* ResourceLoader.swift in Sources */,
 				9DA5BBBD25DE9C5F00D52CEB /* CategoryViewModelTest.swift in Sources */,
 				9DA5BB6425DE9A4100D52CEB /* TheMovieDBAPIProdTests.swift in Sources */,
 				9DA5BBA525DE9B8F00D52CEB /* CategoryCellTest.swift in Sources */,

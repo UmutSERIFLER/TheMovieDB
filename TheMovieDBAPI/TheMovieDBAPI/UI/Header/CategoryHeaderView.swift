@@ -34,11 +34,13 @@ class CategoryHeaderView: UIView {
     
     var categoryHeaderDelegation: CategoryHeaderViewProtocol?
     
-    convenience init(size: CGSize, delegation: CategoryHeaderViewProtocol? = nil ,title: String = "", number: Int = 0) {
+    convenience init(size: CGSize, titleColor: UIColor, delegation: CategoryHeaderViewProtocol? = nil ,title: String = "", number: Int = 0) {
         let customFrame = CGRect(origin: .zero, size: size)
         self.init(frame: customFrame)
         categoryHeaderDelegation = delegation
         headerTitle.text = title
+        headerTitle.textColor = titleColor
+        categoryButton.setTitleColor(titleColor, for: .normal)
         categoryButton.setTitle("SE ALLE (\(number))", for: .normal)
     }
     

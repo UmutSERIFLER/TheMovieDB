@@ -13,9 +13,9 @@ class ContentCVBasicCell: UICollectionViewCell {
     
     var content: ContentModel? {
         didSet {
-            self.contentName.text = content?.title
-            contentView.backgroundColor = (content?.mediaType == .person) ? .blue : (content?.mediaType == .movie) ? .lightGray : .darkGray
+            self.contentName.text = content?.originalName ?? content?.originalTitle
             guard let contentURL = self.content?.getContentImageURL(resolution: .medium) else { return }
+            contentImage.backgroundColor = (content?.mediaType == .person) ? .blue : (content?.mediaType == .movie) ? .lightGray : .darkGray
             contentImage.kf.indicatorType = .activity
             contentImage.kf.setImage(with: contentURL)
         }
@@ -24,9 +24,9 @@ class ContentCVBasicCell: UICollectionViewCell {
     fileprivate lazy var contentImage: UIImageView = {
         let iv = UIImageView()
         iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.contentMode = .scaleToFill
+        iv.contentMode = .scaleAspectFit
         iv.layer.masksToBounds = true
-        iv.layer.cornerRadius = 34
+        iv.layer.cornerRadius = 10
         iv.clipsToBounds = true
         return iv
     }()
@@ -45,8 +45,6 @@ class ContentCVBasicCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: .zero)
         contentView.backgroundColor = .clear
-        contentView.layer.masksToBounds = true
-        contentView.layer.cornerRadius = 34
         contentView.addSubview(contentImage)
         contentView.addSubview(contentName)
         NSLayoutConstraint.activate([
@@ -56,7 +54,7 @@ class ContentCVBasicCell: UICollectionViewCell {
             contentImage.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             
             contentName.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.3),
-            contentName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            contentName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             contentName.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 5),
             contentName.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])

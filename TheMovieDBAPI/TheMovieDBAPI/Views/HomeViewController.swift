@@ -92,8 +92,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard section > 0, let category = viewModel?.getContents(in: section) else { return nil }
-        let categoryHeader: CategoryHeaderView = CategoryHeaderView(size: tableView.frame.size,delegation: self ,title: category.contentType.rawValue.uppercased(), number: category.content.totalResults)
+        guard section > 0, let category = viewModel?.getContents(in: section), let content = category.content.results.first else { return nil }
+        let categoryColor : UIColor = (content.mediaType == .all) ? .blue : (content.mediaType == .movie) ? .lightGray : .black
+        let categoryHeader: CategoryHeaderView = CategoryHeaderView(size: tableView.frame.size,titleColor: categoryColor, delegation: self ,title: category.contentType.rawValue.uppercased(), number: category.content.totalResults)
         return categoryHeader
     }
     

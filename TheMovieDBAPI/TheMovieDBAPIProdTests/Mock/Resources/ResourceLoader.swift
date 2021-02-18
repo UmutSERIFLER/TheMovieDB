@@ -8,7 +8,7 @@
 
 import Foundation
 
-@testable import TheMovieDBAPIDev
+@testable import TheMovieDBAPIProd
 
 struct ResourceLoader {
     
