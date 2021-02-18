@@ -22,11 +22,11 @@ struct TabbarItemController {
             self.controller = HomeViewController()
             self.imageEnabled = "movie_icon_active"
             self.imageDisabled = "movie_icon_inactive"
-//        case .Search:
-//            self.controllerName = SearchViewController.identifier
-//            self.controller = SearchViewController()
-//            self.imageEnabled = "search_active_icon"
-//            self.imageDisabled = "search_inactive_icon"
+        case .Search:
+            self.controllerName = SearchViewController.identifier
+            self.controller = SearchViewController()
+            self.imageEnabled = "search_icon_active"
+            self.imageDisabled = "search_icon_inactive"
         }
     }
 }

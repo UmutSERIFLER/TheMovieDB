@@ -14,7 +14,8 @@ class BaseTableView: UITableView {
         super.init(frame: frame, style: .grouped)
         backgroundColor = .customBackgroundColor
         keyboardDismissMode = .onDrag
-        allowsSelection = false
+        translatesAutoresizingMaskIntoConstraints = false
+        tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
         cellArray.forEach { register($0, forCellReuseIdentifier: $0.identifier) }
     }
     
